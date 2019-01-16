@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ru.hodorov.mireaAipThreeTaskTwo.entity.EditableBookTableView?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="750.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.hodorov.mireaAipThreeTaskTwo.controller.MainController">
+    <padding>
+        <Insets left="10" top="10" right="10" bottom="10" />
+    </padding>
+    <EditableBookTableView fx:id="bookTable" VBox.vgrow="ALWAYS"/>
+    <HBox>
+        <VBox.margin>
+            <Insets top="10"/>
+        </VBox.margin>
+        <Button fx:id="deleteBookButton" text="Удалить" maxWidth="Infinity" HBox.hgrow="ALWAYS"/>
+        <Button fx:id="addBookButton" text="Добавить" maxWidth="Infinity" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets left="5"/>
+            </HBox.margin>
+        </Button>
+        <Button fx:id="saveBookButton" text="Сохранить" maxWidth="Infinity" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets left="5"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>
